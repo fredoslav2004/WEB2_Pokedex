@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <header>
-        <Link to="/">Pokedex</Link>
+        <nav>
+          <Link to="/">Pokedex</Link>
+        </nav>
       </header>
 
       <Routes>

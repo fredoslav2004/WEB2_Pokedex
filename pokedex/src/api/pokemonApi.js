@@ -1,7 +1,7 @@
-export function getPokemonList() {
-  return fetch('https://pokeapi.co/api/v2/pokemon?limit=151').then((response) =>
-    response.json(),
-  )
+export function getPokemonList(limit = 20, offset = 0) {
+  return fetch(
+    `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`,
+  ).then((response) => response.json())
 }
 
 export function getPokemonDetails(name) {

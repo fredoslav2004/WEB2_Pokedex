@@ -3,15 +3,36 @@ header {
   padding: 20px;
 }
 
+nav {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
 header a {
   color: white;
-  font-size: 24px;
   font-weight: bold;
   text-decoration: none;
 }
 
+header a:first-child {
+  font-size: 24px;
+}
+
 main {
   padding: 20px;
+}
+
+.page-title {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.page-title p {
+  color: #4b5563;
+  margin: 0;
 }
 
 .pokemon-list {
@@ -33,6 +54,49 @@ main {
   text-transform: capitalize;
 }
 
+.pagination {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background: #111827;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px 14px;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.details-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  max-width: 760px;
+}
+
+.details-grid > div {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
 h1 {
+  text-transform: capitalize;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+li {
   text-transform: capitalize;
 }
